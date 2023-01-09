@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import ThemeContext from '../contexts/ThemeContext'
 
-import LangContext from '../contexts/LangContext';
+import {useTheme} from '../contexts/ThemeContext'
+import {useLang} from '../contexts/LangContext';
+
 
 function Footer() {
 
-    const{theme,toogleTheme}=useContext(ThemeContext);
-    const{lang}=useContext(LangContext);
+    const{theme,toogleTheme}=useTheme();
+    const{lang}=useLang();
 
   return (
     <div>

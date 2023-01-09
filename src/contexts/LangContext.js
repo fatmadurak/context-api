@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState,useContext } from "react";
 
 const LangContext=createContext();
 
@@ -28,6 +28,9 @@ return(
 
 }
 
+export const useLang=()=>{
 
+return (useContext(LangContext));
 
-export default LangContext;
+}
+
