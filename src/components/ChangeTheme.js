@@ -5,12 +5,14 @@ function ChangeTheme() {
 
 const data=useContext(ThemeContext);
   
-console.log(data);
+
   return (
     <div>
 
-     
-    <button >ChangeTheme</button>
+     Aktif Tema:{data.theme}
+     <br/>
+     <br/>
+    <button onClick={()=>data.setTheme("dark")}>ChangeTheme</button>
 
     </div>
   )
