@@ -14,9 +14,9 @@ function ChangeLang() {
     Aktif Dil:{lang}
     
    <div>
-    <button onClick={()=>setLang("TR")}>TR</button>
-    <button  onClick={()=>setLang("EN")}>EN</button>
-    <button  onClick={()=>setLang("DE")}>DE</button>
+    <button onClick={()=>setLang("tr")}>TR</button>
+    <button  onClick={()=>setLang("en")}>EN</button>
+    <button  onClick={()=>setLang("de")}>DE</button>
    </div>
     </div>
   )
