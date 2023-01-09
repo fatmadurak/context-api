@@ -3,16 +3,16 @@ import ThemeContext from '../contexts/ThemeContext';
 
 function ChangeTheme() {
 
-const data=useContext(ThemeContext);
+const {theme,setTheme}=useContext(ThemeContext);
   
 
   return (
     <div>
 
-     Aktif Tema:{data.theme}
+     Aktif Tema:{theme}
      <br/>
      <br/>
-    <button onClick={()=>data.setTheme(data.theme==="light"?"dark":"light")}>ChangeTheme</button>
+    <button onClick={()=>setTheme(theme==="light"?"dark":"light")}>ChangeTheme</button>
 
     </div>
   )
