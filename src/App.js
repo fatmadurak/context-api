@@ -1,22 +1,20 @@
-import ChangeLang from "./components/ChangeLang";
-import ChangeTheme from "./components/ChangeTheme";
-import Footer from "./components/Footer";
+
+import Container from "./Container";
 import { LangContextProvider } from "./contexts/LangContext";
 import { ThemeContextProvider } from "./contexts/ThemeContext";
+import "./styles.css"
 
 
 
-function App() {
-  return (
-    <div >
+const App=()=> 
+ (
+ 
 
   <LangContextProvider>
 
   <ThemeContextProvider>
 
-    <ChangeTheme/>
-    <ChangeLang/>
-    <Footer/>
+   <Container/>
     
    </ThemeContextProvider>
 
@@ -25,8 +23,8 @@ function App() {
  
       
 
-    </div>
+   
   );
-}
+
 
 export default App;
