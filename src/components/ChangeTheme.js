@@ -12,7 +12,7 @@ const data=useContext(ThemeContext);
      Aktif Tema:{data.theme}
      <br/>
      <br/>
-    <button onClick={()=>data.setTheme("dark")}>ChangeTheme</button>
+    <button onClick={()=>data.setTheme(data.theme==="light"?"dark":"light")}>ChangeTheme</button>
 
     </div>
   )
